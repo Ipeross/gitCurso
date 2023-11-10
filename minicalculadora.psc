@@ -21,7 +21,12 @@ Algoritmo minicalculadora
 				num_res <- num_a * num_b;
 				Escribir "La multiplicación de ", num_a," y de ", num_b," resulta en ",num_res;
 			sino
-				Escribir "Esa operación no esta permitida";
+				si (opcion = 4) entonces
+					num_res <- num_a/num_b;
+					Escribir "La división de ", num_a," y de ", num_b," resulta en ",num_res;
+				sino
+					Escribir "Esa operación no esta permitida";
+				finsi
 			finsi
 		finsi
 		
